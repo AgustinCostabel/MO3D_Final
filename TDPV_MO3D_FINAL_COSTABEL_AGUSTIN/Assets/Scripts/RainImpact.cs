@@ -24,6 +24,6 @@ public class RainImpact : MonoBehaviour
     private void WeatherManager_OnRaining(object sender, System.EventArgs e) {
         playerArmor.SetFloat("_Smoothness", 1f);
         playerArmor.color = new Color32(125, 125, 125, 1);
-        stoneFloor.smoothness = 0.6f;
+        stoneFloor.smoothness = 0.2f;
     }
 }

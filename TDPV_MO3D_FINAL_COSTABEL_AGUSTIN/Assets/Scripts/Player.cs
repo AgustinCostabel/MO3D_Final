@@ -120,6 +120,8 @@ public class Player : MonoBehaviour, I_HasProgress {
         level = 1;
         levelText.text = level.ToString();
 
+        Spells.Instance.AddSpell(spellSO4);
+
     }
 
     private void Update() {
@@ -138,6 +140,7 @@ public class Player : MonoBehaviour, I_HasProgress {
                 buffActive = false;
             }
         }
+
     }
 
     private void ExperienceManager_OnLevelUp(object sender, EventArgs e) {
